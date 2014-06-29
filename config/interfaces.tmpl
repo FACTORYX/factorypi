@@ -1,0 +1,18 @@
+# saved in /root
+
+auto lo
+
+iface lo inet loopback
+
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+auto wlan0
+iface wlan0 inet dhcp
+#wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+{{wpa-ssid}}
+{{wpa-psk}}
+
+iface default inet dhcp

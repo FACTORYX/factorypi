@@ -1,0 +1,4 @@
+# saved in /boot
+
+wpa-ssid "NetworkSSID"
+wpa-psk "PSK"
